@@ -1,0 +1,15 @@
+{
+  "name": "excelread",
+  "version": "1.0.0",
+  "description": "fileread",
+  "main": "index.js",
+  "scripts": {
+    "start": "node start.js"
+  },
+  "author": "wanghui",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^15.0.2",
+    "node-xlsx": "^0.16.1"
+  }
+}
