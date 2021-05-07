@@ -4,7 +4,8 @@
   "description": "fileread",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node index.ts"
+    "start": "ts-node index.ts",
+    "node_dev": "node start.js"
   },
   "author": "wanghui",
   "license": "ISC",
