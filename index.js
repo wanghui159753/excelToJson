@@ -4,12 +4,17 @@ var ar = [];
 var index;
 (function (index) {
     index[index["index"] = 0] = "index";
-    index[index["name"] = 1] = "name";
-    index[index["type"] = 2] = "type";
-    index[index["carea"] = 3] = "carea";
-    index[index["area"] = 4] = "area";
+    index[index["area"] = 1] = "area";
+    index[index["name"] = 2] = "name";
+    index[index["lng"] = 3] = "lng";
+    index[index["lat"] = 4] = "lat";
     index[index["address"] = 5] = "address";
-    index[index["lnglat"] = 6] = "lnglat";
+    index[index["fast"] = 6] = "fast";
+    index[index["slow"] = 7] = "slow";
+    index[index["fast_d"] = 8] = "fast_d";
+    index[index["slow_d"] = 9] = "slow_d";
+    index[index["total"] = 10] = "total";
+    index[index["time"] = 11] = "time";
 })(index || (index = {}));
 list[0].data.forEach(function (v) {
     console.log(v[0]);
@@ -21,7 +26,7 @@ function set_obj(v) {
     if (v === void 0) { v = []; }
     var obj = new Object();
     v.forEach(function (a, i) {
-        obj[index[i]] = a || '';
+        obj[index[i]] = a;
     });
     ar.push(obj);
 }
